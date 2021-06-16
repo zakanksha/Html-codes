@@ -2,29 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="css/master.css">
+    <script type="text/javascript" src="myjs.js"></script>
   </head>
+  
   <body>
 
-<h1> Hello! This is the heading.</h1>
+<h1>Hello!</h1>
 <a href="#A1">To send email click this</a>
 <p style="color:Red;">This is paragraph with a line break <br>where you can write anything you want to.</p> <!-- <br> tag is used to break the line-->
-<a href="https://github.com/zakanksha"> Click this link to visit my github</a>
+<a href="https://github.com/zakanksha" > Click this link to visit my github</a>
 <p style="color:MediumSeaGreen;">
   <i >Below I have added an image as you can see</i><br> <!-- <i></i> tag is used for italic text.-->
   <img src="image1.jpg" alt="My art" style="border:2px solid Tomato;" usemap="#workmap">
   <map name="workmap">
-  <area shape="default" coords="337,300,44" href="image1.jpg" onclick="myFunction()">
+  <area shape="default" coords="337,300,44" href="css/image1.jpg" onclick="f1()">
   </map>
-<script>
-function myFunction() {
-  alert("You clicked the picture!");
-}
-</script>
+
 </p>
 <!-- <cite></cite> tag is usually used for the title name -->
-<cite>The Hideous</cite> by zakanksha.
+<cite>The Hideous</cite> by kyuin.
 
 <hr> <!--to draw line-->
 
@@ -58,9 +58,96 @@ function myFunction() {
 <h4>The below line is written from right to left try to read it.</h4>
 <bdo dir="rtl">Well, You obviously read it.</bdo>
 <p style="background-color:rgb(25, 21, 70); color:white; text-align:center;">SPEAK YOUR MIND</p>
+<!-- link to send email-->
+<a id="A1" href="mailto:zakankshamishra@gmail.com" >Send email</a><br><br><br>
+<button onclick="document.location='master.css'" style="color:blue; ">Click me</button>
+<!-- <table> tag to create table-->
+<table>
+  <caption>Friends</caption>
+  <tr>
+    <th>Name</th>
+    <th>Contact</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Chandler</td>
+    <td>9839178461</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Monica</td>
+    <td>2285473028</td>
+    <td>29</td>
+  </tr>
+</table>
+<br>
+<table id="t1">
+  <caption>Friends</caption>
+  <tr>
+    <th>Name:</th>
+    <td>Phoebe</td>
+  </tr>
+  <tr>
+    <th>Contact</th>
+    <td>2673001985</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>30</td>
+  </tr>
+</table>
+<br>
 
-<a id="A1" href="mailto:zakankshamishra@gmail.com">Send email</a><br><br><br>
-<button onclick="document.location='master.css'" style="color:blue;">Click me</button>
+<h4>This is unordered list-</h4>
+<ul style="list-style-type:square;">
+  <li>Black</li>
+  <li>White</li>
+  <li>Red</li>
+  <li>Gray</li>
+</ul>
+<h4>This is ordered list/Nested list-</h4>
+<ol type="a"start="1">
+  <li>Black</li>
+  <li>White</li>
+  <li>Blue
+  <ul>
+    <li>Dark blue</li>
+    <li>Light blue</li>
+  </ul> </li>
+  <li>Gray</li>
+</ol>
+<h4>This is description list-</h4>
+<dl>
+  <dt>Black</dt>
+  <dd>-favorite color</dd>
+  <dt>White</dt>
+  <dd>-Peaceful color</dd>
+</dl>
+<br><br>
+<!-- To create a navigation menu i.e. horizontal list-->
+<ul id="navigation">
+  <li><a href="#home">Home</a> </li>
+  <li><a href="#drinks">Drinks</a> </li>
+  <li><a href="#Wafers">Wafers</a> </li>
+</ul>
+<!-- div tag-->
+<div class="c1">
+  <div class="c2"> <img src="image1.jpg" alt=""></div>
+  <h1>hi</h1>
+</div>
+<br><br>
+<!-- iframe tag is used to display another web page within the current webpage-->
+<iframe src="index.html" width="600" height="400"></iframe>
+
+<br>
+<h1 style="color:blue; text-align:center;">JAVASCRIPT</h1><br>
+<button type="button" name="button" onclick="f2()">Click me to display Date & Time</button>
+<p id="dt"></p>
+<br>
+<i id="hi">Hey</i>
+<button type="button" name="button" onclick="f3()">Click me!</button>
+
+
 
 
 
