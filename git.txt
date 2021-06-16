@@ -13,4 +13,5 @@ git status
 
 
 #to sync browser
-browser-sync start --server --directory --files "*"
+browser-sync start --server --directory --files "*" or
+browser-sync start --server --files "index.html"
