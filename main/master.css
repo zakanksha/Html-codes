@@ -1,7 +1,7 @@
 body {
   background-color: powderblue;
-  background-image: url('image1.jpg');
-  background-repeat: no-repeat;
+/*  background-image: url('image1.jpg');
+  background-repeat: no-repeat;*/
 }
 p{
   font-family: courier;
