@@ -8,11 +8,20 @@
   <body>
 
 <h1> Hello! This is the heading.</h1>
+<a href="#A1">To send email click this</a>
 <p style="color:Red;">This is paragraph with a line break <br>where you can write anything you want to.</p> <!-- <br> tag is used to break the line-->
 <a href="https://github.com/zakanksha"> Click this link to visit my github</a>
 <p style="color:MediumSeaGreen;">
   <i >Below I have added an image as you can see</i><br> <!-- <i></i> tag is used for italic text.-->
-  <img src="image1.jpg" alt="My art" style="border:2px solid Tomato;">
+  <img src="image1.jpg" alt="My art" style="border:2px solid Tomato;" usemap="#workmap">
+  <map name="workmap">
+  <area shape="default" coords="337,300,44" href="image1.jpg" onclick="myFunction()">
+  </map>
+<script>
+function myFunction() {
+  alert("You clicked the picture!");
+}
+</script>
 </p>
 <!-- <cite></cite> tag is usually used for the title name -->
 <cite>The Hideous</cite> by zakanksha.
@@ -49,8 +58,10 @@
 <address>Contact me at:123456789 <br> Mumbai-401xxx </address><br>
 <h4>The below line is written from right to left try to read it.</h4>
 <bdo dir="rtl">Well, You obviously read it.</bdo>
-<p style="background-color:rgb(25, 21, 70); color:white;  text-align:center;">SPEAK YOUR MIND</p>
+<p style="background-color:rgb(25, 21, 70); color:white; text-align:center;">SPEAK YOUR MIND</p>
 
+<a id="A1" href="mailto:zakankshamishra@gmail.com">Send email</a><br><br><br>
+<button onclick="document.location='master.css'" style="color:blue;">Click me</button>
 
 
 
