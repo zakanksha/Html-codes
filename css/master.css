@@ -83,14 +83,14 @@ iframe {
 /* for a responsive webpage */
 @media only screen and (max-width:800px) {
   /* For tablets: */
-  img, iframe, div, p {
+  img, iframe, div, p.emojis {
     max-width: 80%;
     padding: 0;
   }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  img, iframe, div, p {
+  img, iframe, div, p.emojis {
     max-width: 100%;
   }
 }
