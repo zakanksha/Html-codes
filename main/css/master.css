@@ -1,9 +1,11 @@
 body {
   background-color: powderblue;
-/*  background-image: url('image1.jpg');
-  background-repeat: no-repeat;*/
+/*
+  background-image: url('image1.jpg');
+  background-repeat: no-repeat;
+*/
 }
-p{
+p {
   font-family: courier;
   margin: 40px;
 }
@@ -15,11 +17,12 @@ a:link, a:visited {
   text-decoration: none;
   display: inline-block;
 }
-
+button {
+  float: right;
+}
 a:hover, a:active {
   background-color: black;
 }
-
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -33,26 +36,25 @@ th {
 table {
   border-spacing: 5px; /* it will work without border collapse*/
 }
-#t1 tr:nth-child(even){
+#t1 tr:nth-child(even) {
   background-color: yellow;
   color: black;
 }
-#t1 tr:nth-child(odd){
+#t1 tr:nth-child(odd) {
   background-color: pink;
   color: black;
 }
-#navigation{
+#navigation {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: White;
 }
-#navigation li{
+#navigation li {
   float: left;
-
 }
-#navigation li a{
+#navigation li a {
   display: block;
   color: black;
   text-align: center;
@@ -60,7 +62,7 @@ table {
   text-decoration: none;
   background-color: white;
 }
-#navigation li a:hover{
+#navigation li a:hover {
   background-color: black;
   color: white;
 }
@@ -72,13 +74,30 @@ div.c1 {
   align-items: center;
   justify-content: center;
 }
-div.c1 h1{
+div.c1 h1 {
   color: white;
 }
-
-iframe{
+iframe {
   border:2px solid red;
 }
+/* for a responsive webpage */
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  img, iframe {
+    width: 80%;
+    padding: 0;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  img, iframe {
+    max-width: 100%;
+  }
+}
+h1{
+  font-size: 5vw;
+}
+
 
 
 

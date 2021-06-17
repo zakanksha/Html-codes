@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript"/><!-- for seo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!-- necessary tag-->
     <title>My Page</title>
-    <link rel="stylesheet" href="css/master.css">
-    <script type="text/javascript" src="myjs.js"></script>
+    <link rel="stylesheet" href="css/master.css"/>
+    <script src="myjs.js"></script>
   </head>
-  
-  <body>
 
+  <body>
 <h1>Hello!</h1>
 <a href="#A1">To send email click this</a>
-<p style="color:Red;">This is paragraph with a line break <br>where you can write anything you want to.</p> <!-- <br> tag is used to break the line-->
+<!-- <br> tag is used to break the line-->
+<p style="color:Red;">This is paragraph with a line break <br>where you can write anything you want to.</p>
 <a href="https://github.com/zakanksha" > Click this link to visit my github</a>
 <p style="color:MediumSeaGreen;">
   <i >Below I have added an image as you can see</i><br> <!-- <i></i> tag is used for italic text.-->
-  <img src="image1.jpg" alt="My art" style="border:2px solid Tomato;" usemap="#workmap">
+  <img src="css/image1.jpg" alt="My art" style="border:2px solid Tomato;" usemap="#workmap">
   <map name="workmap">
   <area shape="default" coords="337,300,44" href="css/image1.jpg" onclick="f1()">
   </map>
-
 </p>
 <!-- <cite></cite> tag is usually used for the title name -->
 <cite>The Hideous</cite> by kyuin.
-
 <hr> <!--to draw line-->
-
 <p title="This is a quote" style="color:white; background-color:black; text-align:center; font-family:courier;">
   "Life is a drink and love's a drug." (touch this line)
 </p>
-
 <!-- using <pre> tag to display info with spaces without using <br> tag-->
 <pre style="background-color:tomato; font-size:200%;">
   HI This is Akanksha.
@@ -48,7 +44,6 @@
 <p>My favorite color is <del>Black</del><ins>White</ins> .</p>
 <p>This is <sub>subscripted</sub>text. </p>
 <p>This is <sup>superscripted</sup>text. </p>
-
 <!-- <q></q> tag is used to insert quotation mark around the quote.-->
 <p style="color:SlateBlue;">I have something to do: <q>to write the understandable codes.</q></p>
 <!-- <abbr title="xyz"></abbr> tag used for abbreviation-->
@@ -60,7 +55,7 @@
 <p style="background-color:rgb(25, 21, 70); color:white; text-align:center;">SPEAK YOUR MIND</p>
 <!-- link to send email-->
 <a id="A1" href="mailto:zakankshamishra@gmail.com" >Send email</a><br><br><br>
-<button onclick="document.location='master.css'" style="color:blue; ">Click me</button>
+<button onclick="document.location='css/master.css'" style="color:blue; ">Click me</button>
 <!-- <table> tag to create table-->
 <table>
   <caption>Friends</caption>
@@ -97,7 +92,6 @@
   </tr>
 </table>
 <br>
-
 <h4>This is unordered list-</h4>
 <ul style="list-style-type:square;">
   <li>Black</li>
@@ -132,13 +126,12 @@
 </ul>
 <!-- div tag-->
 <div class="c1">
-  <div class="c2"> <img src="image1.jpg" alt=""></div>
+  <div class="c2"> <img src="css/image1.jpg" alt=""></div>
   <h1>hi</h1>
 </div>
 <br><br>
 <!-- iframe tag is used to display another web page within the current webpage-->
 <iframe src="index.html" width="600" height="400"></iframe>
-
 <br>
 <h1 style="color:blue; text-align:center;">JAVASCRIPT</h1><br>
 <button type="button" name="button" onclick="f2()">Click me to display Date & Time</button>
@@ -146,6 +139,40 @@
 <br>
 <i id="hi">Hey</i>
 <button type="button" name="button" onclick="f3()">Click me!</button>
+<br>
+<br><hr>
+<!-- computer code-->
+<pre><code>
+a=5;
+b=5;
+c=a+b;
+</code></pre>
+<!-- some symbol entities-->
+<h5>Some symbol entities</h5>
+<!-- for copyright-->
+<p style="font-size:48px">
+  &copy;&nbsp;
+  <!-- for trademark-->
+  &trade;&nbsp;
+  <!-- for cards-->
+  &spades;&nbsp;&clubs;&nbsp;&hearts;&nbsp;&diams;<br>
+</p>
+<h5>To display emojis</h5>
+<p style="font-size:28px">
+  &#128516;
+  &#128539;
+  &#128616;<br>
+  &#128151;
+</p>
+
+
+
+
+
+
+
+
+
 
 
 
