@@ -164,23 +164,68 @@ c=a+b;
   &#128616;<br>
   &#128151;
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h3>FORM</h3>
+<!-- creating form-->
+<form class="form1" action="index.html" method="post" autocomplete="on">
+  <fieldset>
+    <legend>Personal Info:</legend>
+    <label for="fname">First Name:</label><br>
+    <input type="text" name="fname" value=""><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" name="lname" value=""><br>
+    <!-- radiobutton-->
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label><br>
+    <!-- checkbox-->
+    <input type="checkbox" name="color1" value="blue">
+    <label for="color1">Blue</label><br>
+    <input type="checkbox" name="color2" value="red">
+    <label for="color2">Red</label><br>
+    <input type="checkbox" name="color3" value="maroon">
+    <label for="color3">Maroon</label><br>
+    <!-- drop-down list-->
+    <label for="place">Select place:</label>
+      <span>
+        <select id="place" name="place" size="1">
+          <option value="mumbai">Mumbai</option>
+          <option value="nyc">New York</option>
+          <option value="kathmandu">kathmandu</option>
+        </select>
+      </span><br>
+    <!-- For textarea-->
+    <label for="add">Enter address:</label><br>
+    <textarea name="address" id="add" rows="3" cols="20" required></textarea><br>
+    <!-- data-list-->
+    <label for="lan">Language:</label>
+    <input list="lang" id="lan">
+    <datalist id="lang">
+      <option value="Python">
+      <option value="Java">
+      <option value="C">
+    </datalist><br>
+    <label for="pin">Enter pincode:</label>
+    <input type="text" id="pin" name="pin" maxlength="6" size="5"><br>
+    <input type="submit" value="submit">
+  </fieldset>
+</form>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <!--
+  to perform operation-
+  only form tag does calculation
+  -->
+  <h4>Addition of 2 numbers:</h4>
+  <input type="number" id="a" name="a" value="0"><br>
+  + <br>
+  <input type="number" id="b" name="b" value="0"><br>
+  =
+  <output name="x" for="a b"></output><br>
+  <input type="reset" value="reset">
+</form>
+<label for="gsearch">Search Google:</label>
+<input type="search" id="gsearch" name="gsearch"><br><br>
+<!-- to display youtube video-->
+<iframe src="https://www.youtube.com/embed/YykjpeuMNEk" width="620" height="400"></iframe>
 </body>
 </html>

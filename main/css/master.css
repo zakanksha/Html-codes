@@ -83,35 +83,18 @@ iframe {
 /* for a responsive webpage */
 @media only screen and (max-width:800px) {
   /* For tablets: */
-  img, iframe {
-    width: 80%;
+  img, iframe, div {
+    max-width: 80%;
     padding: 0;
   }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  img, iframe {
+  img, iframe, div {
     max-width: 100%;
   }
 }
 h1{
   font-size: 5vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
+/*done*/
